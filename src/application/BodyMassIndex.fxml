@@ -1,7 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
-	
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BodyMassIndexController">
-	<!-- TODO Add Nodes -->
+
+<BorderPane prefHeight="159.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BodyMassIndexController">
+   <top>
+      <VBox prefHeight="185.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox>
+               <children>
+                  <Label text="Altezza">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="8.0" right="5.0" top="8.0" />
+                     </HBox.margin></Label>
+                  <TextField fx:id="txtAltezza" prefHeight="25.0" prefWidth="80.0" text="181">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin></TextField>
+                  <Label text="cm">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Peso">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="8.0" right="5.0" top="8.0" />
+                     </HBox.margin></Label>
+                  <TextField fx:id="txtPeso" prefHeight="25.0" prefWidth="80.0" text="90">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="16.0" right="5.0" top="5.0" />
+                     </HBox.margin></TextField>
+                  <Label text="kg">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="8.0" right="5.0" top="8.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="45.0" prefWidth="200.0">
+               <children>
+                  <Label text="BMI">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="8.0" right="5.0" top="8.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="risultatoNumerico" prefHeight="17.0" prefWidth="75.0" text="27">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="26.0" right="5.0" top="8.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="29.0" prefWidth="200.0">
+               <children>
+                  <Label text="è sei in">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="8.0" right="5.0" top="8.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="descrizioneBMI" text="Grasso">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="8.0" right="5.0" top="8.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="67.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="BMI" mnemonicParsing="false" onAction="#calcolaBMI" prefHeight="25.0" prefWidth="180.0" text="Calcolo BMI">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="8.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
 </BorderPane>

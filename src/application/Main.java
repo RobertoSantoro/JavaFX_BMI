@@ -15,7 +15,7 @@ public class Main extends Application {
 			BorderPane root =loader.load();
 			BodyMassIndexModel model = new BodyMassIndexModel();
 			((BodyMassIndexController)loader.getController()).setModel(model);
-			Scene scene = new Scene(root,400,400);
+			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("BMI Calculator");
