@@ -61,12 +61,12 @@
             </HBox>
             <HBox prefHeight="29.0" prefWidth="200.0">
                <children>
-                  <Label text="è sei in">
+                  <Label text="ed è">
                      <HBox.margin>
                         <Insets bottom="5.0" left="8.0" right="5.0" top="8.0" />
                      </HBox.margin>
                   </Label>
-                  <Label fx:id="descrizioneBMI" text="Grasso">
+                  <Label fx:id="descrizioneBMI" text="sovrappeso">
                      <HBox.margin>
                         <Insets bottom="5.0" left="8.0" right="5.0" top="8.0" />
                      </HBox.margin>
